@@ -1,0 +1,36 @@
+[project]
+name = "NS-Project"
+version = "1.0.0"
+description = ""
+authors = [
+    { name = "Nikolas Nosál", email = "xnosal@mendelu.cz" },
+    { name = "Ondřej Studničný", email = "xstudni1@mendelu.cz" },
+    { name = "Jakub Vaněk", email = "xvanek9@mendelu.cz" },
+]
+requires-python = ">3.12,<3.13"
+dependencies = [
+    "torch (>=2.8.0,<2.9.0)",
+    "torchvision (>=0.23.0,<0.27.0)",
+    "matplotlib (>=3.10.9,<4.0.0)",
+    "numpy (>=2.4.4,<3.0.0)",
+    "mystmd (>=1.9.0,<2.0.0)",
+    "tqdm (>=4.67.3,<5.0.0)",
+    "ipywidgets (>=8.1.8,<9.0.0)",
+    "ipykernel (>=7.2.0,<8.0.0)",
+    "ipycanvas (>=0.14.3,<0.15.0)",
+    "typer (>=0.25.1,<0.26.0)",
+    "rich (>=15.0.0,<16.0.0)",
+]
+
+[tool.poetry.requires-plugins]
+poetry-plugin-export = ">=1.10.0,<2.0.0"
+
+[tool.poetry]
+packages = [{ include = "src" }]
+
+[project.scripts]
+mnist-exp = "src.main:app"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

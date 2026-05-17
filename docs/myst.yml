@@ -1,0 +1,73 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: ce3ca642-7faf-48b4-a90b-aec99f5f2b59
+
+  title: MNIST Classification - Architecture and Normalization
+  short_title: MNIST Classification
+  open_access: false
+
+  authors:
+    - name: Nikolas Nosál
+      email: xnosal@mendelu.cz
+      affiliations:
+        - mendelu
+    - name: Ondřej Studničný
+      email: xstudni1@mendelu.cz
+      affiliations:
+        - mendelu
+    - name: Jakub Vaněk
+      email: xvanek9@mendelu.cz
+      affiliations:
+        - mendelu
+
+  affiliations:
+    - id: mendelu
+      institution: Mendel University in Brno, Faculty of Business and Economics
+
+  keywords:
+    - MNIST
+    - neural networks
+    - CNN
+    - ResNet
+    - normalization
+    - classification
+    - PyTorch
+
+  parts:
+    abstract: >
+      Five neural network architectures — from a single linear layer to a residual 
+      network — are trained across five input normalization strategies on MNIST, 
+      yielding 25 controlled runs under identical hyperparameters. Models are 
+      built in PyTorch using Adam with cosine annealing and evaluated on accuracy, 
+      F1, MCC, and inference speed.
+
+    acknowledgements: >
+      Mendel University in Brno, Faculty of Business and Economics.
+      All authors contributed equally to the experimental design,
+      implementation, and analysis.
+
+    availability: >
+      Source code, trained model checkpoints, and per-run metrics are
+      available at the project repository. All 25 model–normalization
+      combinations are fully reproducible with a single created CLI tool.
+
+  exports:
+    - format: pdf
+      template: lapreprint-typst
+      output: exports/mnist_classification.pdf
+      kind: "ENC-NS Project"
+      logo: figures/logo.jpg
+      theme: blue.darken(60%)
+
+  toc:
+    - file: index.md
+    - file: introduction.md
+    - file: analysis.md
+    - file: implementation.md
+    - file: results.md
+
+site:
+  template: book-theme
+  options:
+    favicon: ~

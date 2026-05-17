@@ -49,7 +49,7 @@ project:
 
     availability: >
       Source code, trained model checkpoints, and per-run metrics are
-      available at the project repository. All 25 model–normalization
+      available at https://github.com/Nouzl0/ENC-NS-Project. All 25 model–normalization
       combinations are fully reproducible with a single created CLI tool.
 
   exports:
@@ -71,3 +71,7 @@ site:
   template: book-theme
   options:
     favicon: ~
+    hide_footer_links: true
+    logo_text: ENC-NS Project - MNIST Classification
+  parts:
+    primary_sidebar_footer: " "

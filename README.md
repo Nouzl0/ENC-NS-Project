@@ -12,8 +12,6 @@ MNIST digit classification study comparing five neural network architectures acr
 | LinearDNN | 101,770 | 97.46% | standardize |
 | SimpleCNN | 28,426 | 96.15% | none |
 
-Full report: [nouzl0.github.io/ENC-NS-Project](https://nouzl0.github.io/ENC-NS-Project)
-
 ## Installation
 
 ```bash
